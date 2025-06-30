@@ -1,0 +1,40 @@
+.header {
+  &__content {
+    @include pageGrid;
+
+    row-gap: 20px;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+
+    @include onTablet {
+      justify-content: start;
+    }
+  }
+
+  &__images {
+    grid-column: 1 / -1;
+    height: 300px;
+    padding-top: 9px;
+    margin-inline: -$container-padding-on-mobile;
+
+    background-image: url(../images/header-img.jpg);
+    background-size: cover;
+    background-position: center;
+
+    @include onTablet {
+      height: 50vw;
+      grid-column: 4 / -1;
+
+      padding-top: 15px;
+      margin-right: -$container-padding-on-tablet;
+      margin-left: 0;
+    }
+
+    @include onDesctop {
+      margin-right: -$container-padding-on-desctop;
+    }
+  }
+}

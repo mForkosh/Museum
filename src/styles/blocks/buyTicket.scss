@@ -1,0 +1,34 @@
+.buy-ticket {
+  background-color: inherit;
+  height: 50px;
+  font-family: IBMPlexSans;
+  font-weight: 500;
+  font-size: 16px;
+  border: 1px $border-color-on-button solid;
+
+  display: flex;
+
+  @include onTablet {
+    width: 270px;
+    height: 70px;
+  }
+
+  &__text {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $main-text-color;
+
+  }
+
+  &__arrow {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: $border-color-on-button;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

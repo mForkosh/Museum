@@ -1,0 +1,16 @@
+.text-logo {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Montserrat;
+  color: $main-text-color;
+  text-decoration: none;
+
+  @include onTablet {
+    font-size: 36px;
+    width: 220px;
+  }
+}

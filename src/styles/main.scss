@@ -1,7 +1,31 @@
 @import 'utils';
 @import 'fonts';
 @import 'typography';
+@import './blocks/header';
+@import './blocks/icon';
+@import './blocks/text-logo';
+@import './blocks/artMuseum';
+@import './blocks/buyTicket';
 
-body {
-  background: $c-gray;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  color: $main-text-color;
+  font-family: IBMPlexSans;
+}
+
+.container {
+  padding-inline: $container-padding-on-mobile;
+
+  @include onTablet {
+    padding-inline: $container-padding-on-tablet;
+  }
+
+  @include onDesctop {
+    padding-inline: $container-padding-on-desctop;
+  }
 }
