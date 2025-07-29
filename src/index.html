@@ -20,7 +20,7 @@
     />
   </head>
 
-  <body>
+  <body class="body page__body">
     <header class="header page__header">
       <div class="container">
         <a
@@ -76,89 +76,91 @@
       id="menu"
       class="aside page__menu"
     >
-      <div class="container aside__container">
-        <div class="aside__content">
-          <div class="aside__first-part">
-            <a
-              href="#"
-              class="icon icon--close"
-            ></a>
+      <div class="aside__background">
+        <div class="container aside__container">
+          <div class="aside__content">
+            <div class="aside__first-part">
+              <a
+                href="#"
+                class="icon icon--close"
+              ></a>
 
-            <ul class="navigate">
-              <li class="navigate__item navigate__item--width-100px">
-                <a
-                  href="#galery"
-                  class="navigate__link"
-                >
-                  Галерея
-                </a>
-              </li>
-
-              <li class="navigate__item navigate__item--width-100px">
-                <a
-                  href="#aboutUs"
-                  class="navigate__link"
-                >
-                  Про Нас
-                </a>
-              </li>
-              <li class="navigate__item navigate__item--width-100px">
-                <a
-                  href="#events"
-                  class="navigate__link"
-                >
-                  Виставки та події
-                </a>
-              </li>
-              <li class="navigate__item navigate__item--width-100px">
-                <a
-                  href="#contacts"
-                  class="navigate__link"
-                >
-                  Контакти
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="line aside__line"></div>
-
-          <div class="timetable">
-            <div>
-              <span class="timetable__title">Графік роботи</span>
-
-              <ul
-                class="timetable__list timetable__list--max-content timetable__list--margin-rigth"
-              >
-                <li class="timetable__item">
-                  <span class="timetable__time">12:00 - 20:00</span>
-                  <span class="timetable__day">середа</span>
+              <ul class="navigate">
+                <li class="navigate__item navigate__item--width-100px">
+                  <a
+                    href="#galery"
+                    class="navigate__link"
+                  >
+                    Галерея
+                  </a>
                 </li>
-                <li class="timetable__item">
-                  <span class="timetable__time">12:00 - 20:00</span>
-                  <span class="timetable__day">четверг</span>
+
+                <li class="navigate__item navigate__item--width-100px">
+                  <a
+                    href="#aboutUs"
+                    class="navigate__link"
+                  >
+                    Про Нас
+                  </a>
                 </li>
-                <li class="timetable__item">
-                  <span class="timetable__time">12:00 - 20:00</span>
-                  <span class="timetable__day">п'ятниця</span>
+                <li class="navigate__item navigate__item--width-100px">
+                  <a
+                    href="#events"
+                    class="navigate__link"
+                  >
+                    Виставки та події
+                  </a>
                 </li>
-                <li class="timetable__item">
-                  <span class="timetable__time">11:00 - 19:00</span>
-                  <span class="timetable__day">субота</span>
-                </li>
-                <li class="timetable__item">
-                  <span class="timetable__time">11:00 - 19:00</span>
-                  <span class="timetable__day">неділя</span>
+                <li class="navigate__item navigate__item--width-100px">
+                  <a
+                    href="#contacts"
+                    class="navigate__link"
+                  >
+                    Контакти
+                  </a>
                 </li>
               </ul>
             </div>
 
-            <p class="timetable__weekend timetable__weekend-max-width">
-              <span>Вихідні:</span>
-              понеділок, вівторок
-              <br />
-              Каса припиняє роботу за 1 годину до закриття музею
-            </p>
+            <div class="line aside__line"></div>
+
+            <div class="timetable">
+              <div>
+                <span class="timetable__title">Графік роботи</span>
+
+                <ul
+                  class="timetable__list timetable__list--max-content timetable__list--margin-rigth"
+                >
+                  <li class="timetable__item">
+                    <span class="timetable__time">12:00 - 20:00</span>
+                    <span class="timetable__day">середа</span>
+                  </li>
+                  <li class="timetable__item">
+                    <span class="timetable__time">12:00 - 20:00</span>
+                    <span class="timetable__day">четверг</span>
+                  </li>
+                  <li class="timetable__item">
+                    <span class="timetable__time">12:00 - 20:00</span>
+                    <span class="timetable__day">п'ятниця</span>
+                  </li>
+                  <li class="timetable__item">
+                    <span class="timetable__time">11:00 - 19:00</span>
+                    <span class="timetable__day">субота</span>
+                  </li>
+                  <li class="timetable__item">
+                    <span class="timetable__time">11:00 - 19:00</span>
+                    <span class="timetable__day">неділя</span>
+                  </li>
+                </ul>
+              </div>
+
+              <p class="timetable__weekend timetable__weekend-max-width">
+                <span>Вихідні:</span>
+                понеділок, вівторок
+                <br />
+                Каса припиняє роботу за 1 годину до закриття музею
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -406,13 +408,13 @@
           >
             <span>Контакти:</span>
             <p>
-              вул. М. Грушевського, 6; Київ, 01001
+              <a href="https://maps.app.goo.gl/bkVrUEoQ4QiFyWKCA" target="_blank">вул. М. Грушевського, 6; Київ, 01001</a>
               <br />
-              тел. +38 (044) 278-13-57
+              <a href="tel:+380442781357">тел. +38 (044) 278-13-57</a>
               <br />
               факс +38 (044) 278-74-54
               <br />
-              e-mail: info@namu.kiev.ua
+              <a href="mailto:info@namu.kiev.ua">e-mail: info@namu.kiev.ua</a>
             </p>
           </div>
 

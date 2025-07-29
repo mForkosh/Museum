@@ -34,6 +34,7 @@
 }
 
 .container {
+  position: relative;
   padding-inline: $container-padding-on-mobile;
 
   @include onTablet {
@@ -45,8 +46,9 @@
   }
 }
 
-body {
+.body {
   min-width: 320px;
+  max-width: $max-width;
 
   &:has(.aside:target) {
     overflow: hidden;

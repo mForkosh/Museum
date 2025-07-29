@@ -99,6 +99,11 @@ $default-gap-in-footer-tablet: 64px;
     & > p {
       line-height: 21px;
     }
+
+    & a {
+      text-decoration: none;
+      color: inherit;
+    }
   }
 
   &__line {
