@@ -1,0 +1,99 @@
+.aboutUs {
+  padding: 88px 20px;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(../images/about-us-image.jpg);
+  background-color: #000000bf;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  @include onTablet {
+    padding: 82px 0;
+    gap: 64px;
+    align-items: center;
+  }
+
+  @include onDesctop {
+    padding: 163px 0;
+    gap: 72px;
+  }
+
+  &__text {
+    color: #fff;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    text-align: center;
+
+    @include onTablet {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+
+    @include onTablet {
+      line-height: 100%;
+    }
+  }
+
+  &__form {
+    height: 50px;
+    display: flex;
+
+    @include onTablet {
+      width: 100%;
+      max-width: 460px;
+      height: 70px;
+      gap: 16px;
+    }
+
+    @include onDesctop {
+      max-width: 570px;
+      gap: 30px;
+    }
+  }
+
+  &__input {
+    flex-grow: 1;
+    padding-left: 24px;
+    border: none;
+
+    @include onDesctop {
+      padding-left: 32px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: #687480;
+      font-size: 14px;
+    }
+  }
+
+  &__button {
+    width: 50px;
+    border: none;
+    background-color: #f14a27;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include onTablet {
+      width: 70px;
+    }
+  }
+}

@@ -1,0 +1,173 @@
+$default-gap-in-footer-mobile: 40px;
+$default-gap-in-footer-tablet: 64px;
+
+.footer {
+  &__content {
+    padding-top: 32px;
+    padding-bottom: 50px;
+    @include pageGrid;
+
+    @include onTablet {
+      padding-top: 51px;
+      padding-bottom: 36px;
+    }
+
+    @include onDesctop {
+      padding-top: 47px;
+      padding-bottom: 35px;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $default-gap-in-footer-mobile;
+
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: 1 / 2;
+      flex-direction: column;
+      gap: 62px;
+      align-items: start;
+      justify-content: start;
+    }
+
+    @include onDesctop {
+      margin: 0;
+    }
+  }
+
+  &__logo {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    width: auto;
+  }
+
+  &__socialMediaIcons {
+    display: flex;
+    gap: 20px;
+
+    @include onTablet {
+      gap: 32px;
+    }
+
+    @include onDesctop {
+      align-self: stretch;
+      gap: 0;
+      justify-content: space-between;
+    }
+  }
+
+  &__socialMediaLink {
+    display: flex;
+  }
+
+  &__timetable {
+    flex-direction: column;
+
+    @include onTablet {
+      grid-column: 2 / span 2;
+    }
+
+    @include onDesctop {
+      grid-column: 3 / span 2;
+      margin-bottom: 87px;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 14px;
+
+    @include onTablet {
+      grid-column: 4 / span 2;
+    }
+
+    @include onDesctop {
+      grid-column: 5 / span 2;
+    }
+
+    & > span {
+      line-height: 20px;
+    }
+
+    & > p {
+      line-height: 21px;
+    }
+  }
+
+  &__line {
+    grid-column: 1 / -1;
+    height: 1px;
+    background-color: #1a5a4c80;
+    margin: 70px 0 $default-gap-in-footer-mobile;
+
+    @include onTablet {
+      grid-column: 2 / -2;
+
+      margin: $default-gap-in-footer-tablet 0;
+    }
+
+    @include onDesctop {
+      grid-column: 7 / span 1;
+    }
+
+    &--vertical {
+      @include onDesctop {
+        justify-self: center;
+        grid-column: 7 / span 1;
+        height: 260px;
+        width: 1px;
+        margin: 0;
+      }
+    }
+  }
+
+  &__navigate {
+    grid-column: 1 / -1;
+    gap: 20px;
+    margin-bottom: $default-gap-in-footer-mobile * 2;
+
+    @include onTablet {
+      grid-column: 2 / -2;
+      column-gap: 30px;
+      margin-bottom: 120px;
+    }
+
+    @include onDesctop {
+      grid-column: 8 / -2;
+      margin: 0;
+    }
+
+    &-link {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+    }
+  }
+
+  &__credits {
+    grid-column: 1 / -1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    @include onTablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    & > p {
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 17px;
+    }
+  }
+}

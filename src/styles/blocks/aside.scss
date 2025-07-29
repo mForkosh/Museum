@@ -1,0 +1,67 @@
+.aside {
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10;
+  transition: all 300ms;
+  background: rgba($color: #000, $alpha: 0.7);
+  color: #fff;
+
+  &__container {
+    padding-block: $page-vertical-padding-mobile;
+    background-color: #1a5a4c;
+
+    transition: all 300ms;
+    transform-origin: top;
+    transform: scaleY(0);
+
+    @include onTablet {
+      padding-block: $page-vertical-padding-tablet;
+    }
+  }
+
+  &:target {
+    opacity: 1;
+    pointer-events: all;
+
+    .aside__container {
+      transform: scaleY(1);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: $menu-gap-mobile;
+
+    @include onTablet {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: $menu-gap-tablet;
+    }
+
+    @include onDesctop {
+      gap: $menu-gap-desctop;
+    }
+  }
+
+  &__first-part {
+    display: flex;
+    gap: 28px;
+    flex-grow: 1;
+
+    @include onTablet {
+      gap: $menu-gap-tablet;
+    }
+
+    @include onDesctop {
+      gap: $menu-gap-desctop;
+    }
+  }
+
+  &__line {
+    @include onTablet {
+      height: auto;
+      width: 1px;
+    }
+  }
+}

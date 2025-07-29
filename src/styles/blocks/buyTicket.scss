@@ -1,12 +1,10 @@
 .buy-ticket {
-  background-color: inherit;
   height: 50px;
-  font-family: IBMPlexSans;
   font-weight: 500;
   font-size: 16px;
   border: 1px $border-color-on-button solid;
-
   display: flex;
+  text-decoration: none;
 
   @include onTablet {
     width: 270px;
@@ -19,7 +17,6 @@
     align-items: center;
     justify-content: center;
     color: $main-text-color;
-
   }
 
   &__arrow {

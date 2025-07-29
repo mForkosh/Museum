@@ -1,0 +1,53 @@
+.timetable {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include onTablet {
+    flex-direction: row;
+    flex-grow: 1;
+  }
+
+  &__title {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__list {
+    list-style: none;
+    font-size: 14px;
+    line-height: 21px;
+
+    &--max-content {
+      min-width: max-content;
+    }
+
+    &--margin-rigth {
+      @include onTablet {
+        margin-right: 26px;
+      }
+    }
+  }
+
+  &__time {
+    font-weight: 600;
+  }
+
+  &__weekend {
+    align-self: flex-end;
+    font-size: 14px;
+    line-height: 21px;
+
+    &-max-width {
+      @include onTablet {
+        max-width: 170px;
+      }
+    }
+
+    & > span {
+      font-weight: 600;
+    }
+  }
+}

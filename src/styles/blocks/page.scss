@@ -1,0 +1,18 @@
+.page {
+  &__header {
+    margin-bottom: 70px;
+
+    @include onTablet {
+      margin-bottom: 88px;
+    }
+
+    @include onTablet {
+      margin-bottom: 200px;
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    inset: 0;
+  }
+}

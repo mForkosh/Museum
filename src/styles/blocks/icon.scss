@@ -6,16 +6,21 @@
   &--burger-menu {
     background-image: url(../images/icons/burger-menu.svg);
     position: absolute;
-    top: 27px;
-    left: 20px;
+    top: $page-vertical-padding-mobile;
+    left: $container-padding-on-mobile;
+    z-index: 1;
 
     @include onTablet {
-      top: 39px;
-      left: 34px;
+      top: $page-vertical-padding-tablet;
+      left: $container-padding-on-tablet;
     }
 
     @include onDesctop {
-      left: 55px;
+      left: $container-padding-on-desctop;
     }
+  }
+
+  &--close {
+    background-image: url(../images/icons/close.svg);
   }
 }

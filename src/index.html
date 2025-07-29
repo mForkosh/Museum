@@ -1,5 +1,8 @@
 <!doctype html>
-<html lang="uk">
+<html
+  lang="uk"
+  class="page"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -16,16 +19,17 @@
       href="./styles/main.scss"
     />
   </head>
+
   <body>
-    <header class="header">
+    <header class="header page__header">
       <div class="container">
+        <a
+          href="#menu"
+          class="icon icon--burger-menu"
+        ></a>
+
         <div class="header__content">
           <div class="header__images">
-            <a
-              href="#"
-              class="icon icon--burger-menu"
-            ></a>
-
             <div class="header__logo">
               <a
                 href="#"
@@ -39,26 +43,428 @@
           </div>
 
           <div class="art-Museum">
-            <h1 class="art-Museum__title">ХУДОЖНІЙ МУЗЕЙ</h1>
-            <button class="buy-ticket">
-              <span class="buy-ticket__text">КВИТКИ</span>
-              <div class="buy-ticket__arrow">
-                <img
-                  src="images/icons/arrow-left.svg"
-                  alt="arrow left"
-                />
-              </div>
-            </button>
+            <div class="art-Museum__content">
+              <h1 class="art-Museum__title">ХУДОЖНІЙ МУЗЕЙ</h1>
+
+              <a
+                href="#events"
+                class="buy-ticket art-Museum__button"
+              >
+                <span class="buy-ticket__text">КВИТКИ</span>
+                <div class="buy-ticket__arrow">
+                  <img
+                    src="images/icons/arrow-right.svg"
+                    alt="arrow left"
+                  />
+                </div>
+              </a>
+
+              <a
+                href="#events"
+                class="events-link art-Museum__events-link"
+              >
+                <div class="events-link__line"></div>
+                <span class="events-link__text">ПОДІЇ</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </header>
 
-    <aside></aside>
+    <aside
+      id="menu"
+      class="aside page__menu"
+    >
+      <div class="container aside__container">
+        <div class="aside__content">
+          <div class="aside__first-part">
+            <a
+              href="#"
+              class="icon icon--close"
+            ></a>
 
-    <main></main>
+            <ul class="navigate">
+              <li class="navigate__item navigate__item--width-100px">
+                <a
+                  href="#galery"
+                  class="navigate__link"
+                >
+                  Галерея
+                </a>
+              </li>
 
-    <footer></footer>
-    <script src="scripts/main.js"></script>
+              <li class="navigate__item navigate__item--width-100px">
+                <a
+                  href="#aboutUs"
+                  class="navigate__link"
+                >
+                  Про Нас
+                </a>
+              </li>
+              <li class="navigate__item navigate__item--width-100px">
+                <a
+                  href="#events"
+                  class="navigate__link"
+                >
+                  Виставки та події
+                </a>
+              </li>
+              <li class="navigate__item navigate__item--width-100px">
+                <a
+                  href="#contacts"
+                  class="navigate__link"
+                >
+                  Контакти
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="line aside__line"></div>
+
+          <div class="timetable">
+            <div>
+              <span class="timetable__title">Графік роботи</span>
+
+              <ul
+                class="timetable__list timetable__list--max-content timetable__list--margin-rigth"
+              >
+                <li class="timetable__item">
+                  <span class="timetable__time">12:00 - 20:00</span>
+                  <span class="timetable__day">середа</span>
+                </li>
+                <li class="timetable__item">
+                  <span class="timetable__time">12:00 - 20:00</span>
+                  <span class="timetable__day">четверг</span>
+                </li>
+                <li class="timetable__item">
+                  <span class="timetable__time">12:00 - 20:00</span>
+                  <span class="timetable__day">п'ятниця</span>
+                </li>
+                <li class="timetable__item">
+                  <span class="timetable__time">11:00 - 19:00</span>
+                  <span class="timetable__day">субота</span>
+                </li>
+                <li class="timetable__item">
+                  <span class="timetable__time">11:00 - 19:00</span>
+                  <span class="timetable__day">неділя</span>
+                </li>
+              </ul>
+            </div>
+
+            <p class="timetable__weekend timetable__weekend-max-width">
+              <span>Вихідні:</span>
+              понеділок, вівторок
+              <br />
+              Каса припиняє роботу за 1 годину до закриття музею
+            </p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section
+        id="events"
+        class="events main__events"
+      >
+        <div class="container">
+          <h2 class="events__title">Актуальні події</h2>
+
+          <article class="exhibition-event events__event">
+            <img
+              class="exhibition-event__img"
+              src="images/event-img/event-img1.jpg"
+              alt="event image"
+            />
+
+            <div class="exhibition-event__about">
+              <div class="exhibition-event__info">
+                <span class="exhibition-event__type">ВИСТАВКА</span>
+                <span class="exhibition-event__date">26.08-29.11.2019</span>
+              </div>
+
+              <h3 class="exhibition-event__name">
+                Йду і повертаюсь &nbsp;
+                <div class="exhibition-event__box"></div>
+              </h3>
+              <p class="exhibition-event__details">
+                Національний Художній Музей України презентує унікальну частину
+                колекції Градобанку - українське мистецтво другої половини
+                1980&#8209;1995 років.
+              </p>
+            </div>
+          </article>
+
+          <article class="exhibition-event events__event">
+            <img
+              class="exhibition-event__img"
+              src="images/event-img/event-img2.jpg"
+              alt="event image"
+            />
+
+            <div class="exhibition-event__about">
+              <div class="exhibition-event__info">
+                <span class="exhibition-event__type">ВИСТАВКА</span>
+                <span class="exhibition-event__date">26.08-29.11.2019</span>
+              </div>
+
+              <h3 class="exhibition-event__name">
+                І спогади і мрії &nbsp;
+                <div class="exhibition-event__box"></div>
+              </h3>
+              <p class="exhibition-event__details">
+                Національний художній музей України до 100 річчя від дня
+                народження видатної української художниці Тетяни Яблонської
+                відкриває ретроспективну ювілейну виставку «І спогади і мрії».
+              </p>
+            </div>
+          </article>
+
+          <article class="lecture-event events__event">
+            <img
+              src="images/event-img/event-img3.jpg"
+              alt="event image"
+              class="lecture-event__img"
+            />
+
+            <div class="lecture-event__about">
+              <div class="lecture-event__info">
+                <span class="lecture-event__type">ЛЕКЦІЯ</span>
+                <span class="lecture-event__date">26/08/2019 - 11:00</span>
+              </div>
+
+              <h3 class="lecture-event__name">Від класицизму до романтизму</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section
+        id="galery"
+        class="galery main__galery"
+      >
+        <div class="container">
+          <h2 class="galery__title">Галерея</h2>
+
+          <div class="carousel galery__carousel">
+            <div class="carousel__container">
+              <div class="carousel__items">
+                <img
+                  src="images/galery/1.png"
+                  alt="«Наречена»"
+                  class="carousel__item"
+                />
+                <img
+                  src="images/galery/2.png"
+                  alt="«Глухомань» або «Деревня зимой»"
+                  class="carousel__item"
+                />
+                <img
+                  src="images/galery/3.png"
+                  alt="«Сонячний день у Парижі»"
+                  class="carousel__item"
+                />
+                <img
+                  src="images/galery/4.png"
+                  alt="«Захід сонця»"
+                  class="carousel__item"
+                />
+              </div>
+            </div>
+
+            <div class="carousel__dots"></div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="aboutUs"
+        class="aboutUs main__aboutUs"
+      >
+        <div class="aboutUs__text">
+          <h2 class="aboutUs__title">Підписка</h2>
+
+          <p class="aboutUs__description">
+            Бути в курсі всіх актуальних подій та останніх новин.
+          </p>
+        </div>
+
+        <form
+          name="subscribe"
+          class="aboutUs__form"
+          onsubmit="event.preventDefault(); event.target.reset(); alert('Дякуємо за підписку! 😁')"
+        >
+          <input
+            name="subscribeEmail"
+            type="email"
+            required
+            placeholder="E-mail"
+            class="aboutUs__input"
+          />
+
+          <button
+            type="submit"
+            class="aboutUs__button"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_320_174)">
+                <path
+                  d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z"
+                  fill="#000000"
+                />
+              </g>
+            </svg>
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__icons">
+            <a
+              href="#"
+              class="text-logo footer__logo"
+            >
+              na
+              <br />
+              mu
+            </a>
+
+            <div class="footer__socialMediaIcons">
+              <a
+                href="https://www.facebook.com/namu.museum/"
+                class="footer__socialMediaLink"
+                target="_blank"
+              >
+                <img
+                  src="images/icons/facebook-logo.svg"
+                  alt="facebook"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/namu.museum/"
+                class="footer__socialMediaLink"
+                target="_blank"
+              >
+                <img
+                  src="images/icons/instagram-logo.svg"
+                  alt="instagram"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="timetable footer__timetable">
+            <div>
+              <span class="timetable__title">Графік роботи</span>
+
+              <ul class="timetable__list">
+                <li class="timetable__item">
+                  <span class="timetable__time">12:00 - 20:00</span>
+                  <span class="timetable__day">середа</span>
+                </li>
+                <li class="timetable__item">
+                  <span class="timetable__time">12:00 - 20:00</span>
+                  <span class="timetable__day">четверг</span>
+                </li>
+                <li class="timetable__item">
+                  <span class="timetable__time">12:00 - 20:00</span>
+                  <span class="timetable__day">п'ятниця</span>
+                </li>
+                <li class="timetable__item">
+                  <span class="timetable__time">11:00 - 19:00</span>
+                  <span class="timetable__day">субота</span>
+                </li>
+                <li class="timetable__item">
+                  <span class="timetable__time">11:00 - 19:00</span>
+                  <span class="timetable__day">неділя</span>
+                </li>
+              </ul>
+            </div>
+
+            <p class="timetable__weekend">
+              <span>Вихідні:</span>
+              понеділок, вівторок
+              <br />
+              Каса припиняє роботу за 1 годину до закриття музею
+            </p>
+          </div>
+
+          <div
+            id="contacts"
+            class="footer__contacts"
+          >
+            <span>Контакти:</span>
+            <p>
+              вул. М. Грушевського, 6; Київ, 01001
+              <br />
+              тел. +38 (044) 278-13-57
+              <br />
+              факс +38 (044) 278-74-54
+              <br />
+              e-mail: info@namu.kiev.ua
+            </p>
+          </div>
+
+          <div class="footer__line footer__line--vertical"></div>
+
+          <ul class="navigate footer__navigate">
+            <li class="navigate__item">
+              <a
+                href="#galery"
+                class="navigate__link footer__navigate-link"
+              >
+                Галерея
+              </a>
+            </li>
+
+            <li class="navigate__item">
+              <a
+                href="#aboutUs"
+                class="navigate__link footer__navigate-link"
+              >
+                Про Нас
+              </a>
+            </li>
+            <li class="navigate__item">
+              <a
+                href="#events"
+                class="navigate__link footer__navigate-link"
+              >
+                Виставки та події
+              </a>
+            </li>
+            <li class="navigate__item">
+              <a
+                href="#contacts"
+                class="navigate__link footer__navigate-link"
+              >
+                Контакти
+              </a>
+            </li>
+          </ul>
+
+          <div class="footer__credits">
+            <p>Designed by Zhyriada Marina</p>
+            <p>Copyright © 2019. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="scripts/main.js"
+    ></script>
   </body>
 </html>

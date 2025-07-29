@@ -1,0 +1,19 @@
+.events-link {
+  width: max-content;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+
+  &__text {
+    font-size: 14px;
+    font-weight: 700;
+    color: $secondary-text-color;
+  }
+
+  &__line {
+    width: 70px;
+    height: 1px;
+    background-color: $border-color-on-button;
+  }
+}
