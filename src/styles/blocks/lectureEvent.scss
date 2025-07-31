@@ -3,6 +3,22 @@
   flex-direction: column;
   align-items: center;
 
+  &__container {
+    position: relative;
+    margin-top: 60px;
+    padding-inline: $container-padding-on-mobile;
+
+    @include onTablet {
+      margin-top: 112px;
+      padding-inline: $container-padding-on-tablet;
+    }
+
+    @include onDesctop {
+      margin-top: 104px;
+      padding-inline: $container-padding-on-desctop;
+    }
+  }
+
   &__img {
     display: block;
     object-fit: cover;

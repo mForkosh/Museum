@@ -36,6 +36,8 @@
 .container {
   position: relative;
   padding-inline: $container-padding-on-mobile;
+  max-width: $max-width;
+  margin-inline: auto;
 
   @include onTablet {
     padding-inline: $container-padding-on-tablet;
@@ -48,7 +50,6 @@
 
 .body {
   min-width: 320px;
-  max-width: $max-width;
 
   &:has(.aside:target) {
     overflow: hidden;

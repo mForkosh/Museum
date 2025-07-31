@@ -1,4 +1,8 @@
 .header {
+  @media (min-width: $max-width) {
+    overflow-x: hidden; // hides the horizontal scrollbar that appears because of the vertical scrollbar in Google Chrome
+  }
+
   &__content {
     @include pageGrid;
 
@@ -37,6 +41,12 @@
       margin-right: -$container-padding-on-desctop;
       grid-column: 6 / -1;
       height: 100vh;
+    }
+
+    @media (min-width: $max-width) {
+      margin-right: calc(
+        (($max-width) - 100vw) / 2 - $container-padding-on-desctop
+      );
     }
   }
 }
